@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="layout_a"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_b">
+      <item>
+       <layout class="QVBoxLayout" name="layout_sigtype">
+        <item alignment="Qt::AlignTop">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Tipo de señal</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignTop">
+         <widget class="QComboBox" name="combo_sigtype">
+          <item>
+           <property name="text">
+            <string>Sine</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cosine</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Square</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sawtooth</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layout_sigfreq">
+        <item alignment="Qt::AlignTop">
+         <widget class="QLabel" name="label_fsignal">
+          <property name="text">
+           <string>f señal: </string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignTop">
+         <widget class="QSlider" name="slider_fsignal">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layout_samplefreq">
+        <item alignment="Qt::AlignTop">
+         <widget class="QLabel" name="label_fsampleo">
+          <property name="text">
+           <string>f sampleo: </string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignTop">
+         <widget class="QSlider" name="slider_fsampling">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item alignment="Qt::AlignTop">
+         <widget class="QLabel" name="label_filter">
+          <property name="text">
+           <string>filter pass frequency </string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QSlider" name="filter_slider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item alignment="Qt::AlignTop">
+         <widget class="QLabel" name="label_dc">
+          <property name="text">
+           <string>DC ventana analógica</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignVCenter">
+         <widget class="QSlider" name="dc_slider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QCheckBox" name="checkBox_nodo1">
+          <property name="text">
+           <string>FAA</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_nodo2">
+          <property name="text">
+           <string>S/H</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_nodo3">
+          <property name="text">
+           <string>LLAVE A.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_nodo4">
+          <property name="text">
+           <string>FR</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="layout_graphcoice">
+        <item>
+         <widget class="QRadioButton" name="radio_freq">
+          <property name="text">
+           <string>Mostrar señal en frecuencia</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radio_time">
+          <property name="text">
+           <string>Mostrar señal en el tiempo</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layout_graph"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
